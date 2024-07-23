@@ -28,7 +28,7 @@ class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
           title: Text(arg.title),
         ),
         body: Card(
-            margin: EdgeInsets.all(20),
+            margin: EdgeInsets.all(24),
             elevation: 10,
             child: lines.isNotEmpty
                 ? ListView.separated(
