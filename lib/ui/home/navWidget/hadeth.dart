@@ -22,15 +22,21 @@ class _HadethState extends State<Hadeth> {
             alignment: Alignment.center,
             width: double.infinity,
             padding: EdgeInsets.symmetric(vertical: 8),
+            margin: EdgeInsets.symmetric(horizontal: 5),
             decoration: BoxDecoration(
                 border: Border.symmetric(
                     horizontal: BorderSide(
                         color: Theme.of(context).primaryColor, width: 2))),
-            child: Text("Ahadeth", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),)),
+            child: Text(
+              "Ahadeth",
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+            )),
         Expanded(
           child: ListView.separated(
-              itemBuilder: (context, index) => HadethTitleItem(fullHadeth[index]),
+              itemBuilder: (context, index) =>
+                  HadethTitleItem(fullHadeth[index]),
               separatorBuilder: (context, index) => Container(
+                margin: EdgeInsets.symmetric(horizontal: 5),
                     width: double.infinity,
                     color: Theme.of(context).primaryColor,
                     height: 2,
